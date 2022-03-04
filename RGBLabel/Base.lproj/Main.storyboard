@@ -90,15 +90,21 @@
                                         <rect key="frame" x="-2" y="0.0" width="198" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                         <connections>
-                                            <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="yVL-YT-0Vs"/>
+                                            <action selector="slidersAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="qoc-ac-Rhf"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Za1-of-DDi">
                                         <rect key="frame" x="-2" y="45" width="198" height="31"/>
                                         <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
+                                        <connections>
+                                            <action selector="slidersAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Sj6-BJ-doR"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DW2-l3-mdN">
                                         <rect key="frame" x="-2" y="90" width="198" height="31"/>
+                                        <connections>
+                                            <action selector="slidersAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="vKY-Xj-4qz"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                                 <constraints>
