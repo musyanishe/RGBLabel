@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-// MARK: outlets
     @IBOutlet var colorView: UIView!
     
     @IBOutlet var redLabel: UILabel!
@@ -19,7 +18,6 @@ class ViewController: UIViewController {
     @IBOutlet var redSlider: UISlider!
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
