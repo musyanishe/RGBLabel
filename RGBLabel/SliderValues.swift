@@ -8,14 +8,16 @@
 import Foundation
 
 struct SliderValues {
-    var redSlider: Float
-    var greenSlider: Float
-    var blueSlider: Float
+    var redSliderValue: Float
+    var greenSliderValue: Float
+    var blueSliderValue: Float
     
     static func getSliderValue() -> SliderValues {
         SliderValues(
-            redSlider: 0.5,
-            greenSlider: 0.5,
-            blueSlider: 0.5)
+            redSliderValue: 0.5,
+            greenSliderValue: 0.5,
+            blueSliderValue: 0.5)
     }
+    
+    
 }
