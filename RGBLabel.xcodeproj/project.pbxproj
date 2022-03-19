@@ -14,7 +14,6 @@
 		CE40B11227D286D000E64274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE40B11127D286D000E64274 /* Assets.xcassets */; };
 		CE40B11527D286D000E64274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE40B11327D286D000E64274 /* LaunchScreen.storyboard */; };
 		CE8E8EE427E522C100A9408A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E8EE327E522C100A9408A /* MainViewController.swift */; };
-		CE8E8EE627E52E2800A9408A /* SliderValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E8EE527E52E2700A9408A /* SliderValues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		CE40B11427D286D000E64274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE40B11627D286D000E64274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE8E8EE327E522C100A9408A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		CE8E8EE527E52E2700A9408A /* SliderValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderValues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +62,6 @@
 				CE40B10A27D286CF00E64274 /* SceneDelegate.swift */,
 				CE8E8EE327E522C100A9408A /* MainViewController.swift */,
 				CE40B10C27D286CF00E64274 /* SettingsViewController.swift */,
-				CE8E8EE527E52E2700A9408A /* SliderValues.swift */,
 				CE40B10E27D286CF00E64274 /* Main.storyboard */,
 				CE40B11127D286D000E64274 /* Assets.xcassets */,
 				CE40B11327D286D000E64274 /* LaunchScreen.storyboard */,
@@ -145,7 +142,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE40B10D27D286CF00E64274 /* SettingsViewController.swift in Sources */,
-				CE8E8EE627E52E2800A9408A /* SliderValues.swift in Sources */,
 				CE40B10927D286CF00E64274 /* AppDelegate.swift in Sources */,
 				CE40B10B27D286CF00E64274 /* SceneDelegate.swift in Sources */,
 				CE8E8EE427E522C100A9408A /* MainViewController.swift in Sources */,
