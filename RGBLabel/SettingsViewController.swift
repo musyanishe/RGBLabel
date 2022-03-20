@@ -30,8 +30,11 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         
         colorView.layer.cornerRadius = 20
-        
         colorView.backgroundColor = viewColor
+        
+        redTextField.delegate = self
+        greenTextField.delegate = self
+        blueTextField.delegate = self
         
         colorTransferToSliders()
         setValue(for: redLabel, greenLabel, blueLabel)
@@ -54,6 +57,7 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func doneButtonPressed() {
+        view.endEditing(true)
         delegate.setColor(colorView.backgroundColor ?? .white)
         dismiss(animated: true)
     }
@@ -104,4 +108,38 @@ class SettingsViewController: UIViewController {
         String(format: "%.2f", slider.value)
     }
 
+}
+
+// MARK: - UITextFieldDelegate
+extension SettingsViewController: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        guard let newValue = textField.text else { return }
+        guard let valueEnteredByUser = Float(newValue) else {
+            showAlert(title: "Oops!", message: "Try to enter the correct format.")
+            return
+        }
+        
+        if textField == redTextField {
+            redSlider.value = valueEnteredByUser
+            redLabel.text = String(valueEnteredByUser)
+        } else if textField == greenTextField {
+            greenSlider.value = valueEnteredByUser
+            greenLabel.text = String(valueEnteredByUser)
+        } else {
+            blueSlider.value = valueEnteredByUser
+            blueLabel.text = String(valueEnteredByUser)
+        }
+        setColor()
+    }
+}
+
+// MARK: - Alert Controller
+extension SettingsViewController {
+    private func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default)
+
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
 }
